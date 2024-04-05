@@ -8,4 +8,4 @@ COPY . .
 RUN ls
 RUN npm run build
 EXPOSE 443
-CMD ["npm", "start", "--", "-p", "443"]
+ENTRYPOINT ["npm", "start", "--", "-p", "443"]
